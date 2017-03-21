@@ -7,6 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('demoazure:server');
 var http = require('http');
+var appInsights = require('applicationinsights');
+appInsights.setup("111ad0d5-4a72-44aa-a2d5-0f58e2e4bb5a").start();
 
 /**
  * Get port from environment and store in Express.
