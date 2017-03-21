@@ -15,4 +15,9 @@ router.get('/two', function(req, res, next) {
   res.render('index', { title: 'PAGE 2', message: 'The second page' });
 });
 
+router.get('/three', function(req, res, next) {
+  res.render('index', { title: 'PAGE three', message: 'The third page' });
+});
+
+
 module.exports = router;
