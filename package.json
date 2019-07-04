@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "applicationinsights": "^0.19.0",
@@ -13,6 +15,8 @@
     "express": "~4.14.1",
     "hbs": "~4.0.1",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
-  }
+    "serve-favicon": "~2.3.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
